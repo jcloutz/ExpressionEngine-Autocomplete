@@ -1,7 +1,7 @@
 [ExpressionEngine Autocomplete](http://github.com/elemental-shift/ExpressionEngine-Autocomplete)
 =================
 
-ExpressionEngine Autocomplete provides code hinting for ExpressionEngine and CodeIgniter in Netbeans 7.0+ and Aptana Studio.
+ExpressionEngine Autocomplete provides code hinting for ExpressionEngine and CodeIgniter in Netbeans 7.0+ and Aptana Studio 3.
 
 Usage
 -----
@@ -45,7 +45,7 @@ To enable autocomplete for custom libraries in Netbeans you must use the @proper
 
 	`@property Table_model $table_model`
 
-+ **Aptana**
++ **Aptana Studio 3**
 If you are using aptana you must instantiate the variable within the EE_Autocomplete_user class constructor.
 
 	`$this->table_model = new Table_model();`
@@ -70,7 +70,7 @@ If you are using aptana you must instantiate the variable within the EE_Autocomp
 	class EE_Autocomplete_user {
 		public function __construct()
 		{
-			// Add autocomplete for Aptana
+			// Add autocomplete for Aptana Studio 3
 			$this->table_model = new Table_model();
 		}
 	}

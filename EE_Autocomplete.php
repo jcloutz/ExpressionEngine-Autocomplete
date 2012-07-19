@@ -27,7 +27,7 @@ class EE_Autocomplete_user {
   {
     /**
      * ================================================
-     * User Objects for Aptana Studio
+     * User Objects for Aptana Studio 3+
      * ================================================
      */
     // $this->object_name = new Object_name();
@@ -40,6 +40,9 @@ class EE_Autocomplete_user {
  ***********************************************************************/
 
 /**
+ * Code Completion for Netbeans 7+
+ *
+ *
  * ================================================
  * Expression Engine Libraries
  * ================================================
@@ -167,8 +170,12 @@ class EE_Autocomplete_user {
  */
 class EE_Autocomplete_base extends EE_Autocomplete_user {
 
+  /*
+   * Code completion for Aptana Studio 3+
+   */
   public function __construct()
   {
+
     /********************************
      * Expression Engine Libraries
      *******************************/
