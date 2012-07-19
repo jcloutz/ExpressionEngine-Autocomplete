@@ -40,9 +40,19 @@ If you are working from within a model the implementation will be automatic as i
 
 Custom Libraries and Objects
 -----------------------------
-It is also possible to include your own custom libraries and models by adding @property hints to the EE_Autocompleter.php file for the EE_Autocompleter_base class.
+It is also possible to include your own custom libraries and models by adding the necessary information to the EE_Autocomplete.php file for the EE_Autocomplete_user class. 
 
-table_model.php
++ **Netbeans 7+**
+To enable autocomplete for custom libraries in Netbeans you must use the @property declartion in the comment before EE_Autocomplete_user class declartion. 
+
+	`@property Table_model $table_model`
+
++ **Aptana**
+If you are using aptana you must instantiate the variable within the EE_Autocomplete_user class constructor.
+
+	`$this->table_model = new Table_model();`
+
+**table_model.php**
 
 	class Table_model extends CI_Model
 	{
@@ -53,17 +63,35 @@ table_model.php
 	}
 
 
-EE_Autocompleter.php
+**EE_Autocomplete.php**
 
 	/**
-	 * ================================================
-	 * User Objects
-	 * ================================================
-	 * Place your own objects and libraries below
+	 * Add autocomplete for Netbeans 7+
 	 * @property Table_model $table_model
 	 */
-	class EE_Autocompleter_base {}
+	class EE_Autocomplete_user {
+		public function __construct()
+		{
+			// Add autocomplete for Aptana
+			$this->table_model = new Table_model();
+		}
+	}
 
 In controllers all functions for your table_model object will now be available via
 
 	$this->EE->table_model->...
+
+In models it will be available via
+
+	$this->table_model->...
+
+Compatibility
+-------------
+This is compatible with Netbeans 7+ and Aptana Studio
+
+Author
+------
+
+**Jeremy Cloutier**
++ http://twitter/elevenStx
++ https://github.com/elemental-shift
