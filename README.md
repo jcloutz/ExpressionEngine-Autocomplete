@@ -1,9 +1,7 @@
 [ExpressionEngine Autocomplete](http://github.com/elemental-shift/ExpressionEngine-Autocomplete)
 =================
 
- This file is based on work done by [EThaiZone](http://codeigniter.com/forums/viewthread/187949/P15/#965668). I have only modified it to include expression engine components. 
-
- ExpressionEngine Autocomplete provides code hinting for ExpressionEngine and CodeIgniter in Netbeans 7.0+.
+ExpressionEngine Autocomplete provides code hinting for ExpressionEngine and CodeIgniter in Netbeans 7.0+ and Aptana Studio.
 
 Usage
 -----
