@@ -91,5 +91,5 @@ Author
 ------
 
 **Jeremy Cloutier**
-+ http://twitter/elevenStx
-+ https://github.com/elemental-shift
++ http://twitter.com/elevenStx
++ http://github.com/elemental-shift
