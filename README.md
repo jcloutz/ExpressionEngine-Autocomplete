@@ -1,11 +1,13 @@
 [ExpressionEngine Autocomplete](http://github.com/elemental-shift/ExpressionEngine-Autocomplete)
 =================
 
-ExpressionEngine Autocomplete provides code hinting for ExpressionEngine and CodeIgniter in Netbeans 7.0+.
+ This file is based on work done by [EThaiZone](http://codeigniter.com/forums/viewthread/187949/P15/#965668). I have only modified it to include expression engine components. 
+
+ ExpressionEngine Autocomplete provides code hinting for ExpressionEngine and CodeIgniter in Netbeans 7.0+.
 
 Usage
 -----
-In any file in which you are required to call `get_instance()` you will have to first instantiated and EE instance and type hint it with an @var declaration.
+In any file in which you are required to call `get_instance()` you will have to first instantiated and EE instance and type hint it with an `@var CI_Controller` declaration.
 
 	class Module_mcp {
 		/**

@@ -13,15 +13,23 @@
  * Subsequent calls to $this->EE->... will provide autocomplete hints.
  *
  * ================================================
- * User Package Objects
+ * User Objects
  * ================================================
  * Place your own objects and libraries below
  * @property Object_name $object_name
  *
  */
-class EE_Autocompleter_base {}
-
-
+class CI_Controller extends EE_Autocompleter_base {
+    /**
+     * @var CI_Controller
+     */
+    public $EE;
+    
+    public function __construct()
+    {
+        $this->EE =& get_instance();
+    }
+}
 
 /**
  * ================================================
@@ -180,4 +188,4 @@ class CI_DB_Driver {
 /**
  * @return CI_Controller
  */
-function get_instance() {}
+function &get_instance() {}
