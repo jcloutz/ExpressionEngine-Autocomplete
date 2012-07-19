@@ -1,8 +1,10 @@
 <?php
 /**
- * @package     EE_Autocomplete
+ * @license     MIT
+ * @copyright   Copyright (c) 2012 Jeremy Cloutier
  * @author      Jeremy Cloutier
- * @since       Version 1.0
+ * @package     EE_Autocomplete
+ * @version     Version 1.0
  *
  *
  * USAGE:
@@ -23,9 +25,11 @@
 class EE_Autocomplete_user {
   public function __construct()
   {
-    /***********************************
-     * User Defined Objects for Aptana
-     **********************************/
+    /**
+     * ================================================
+     * User Objects for Aptana Studio
+     * ================================================
+     */
     // $this->object_name = new Object_name();
 
   }
