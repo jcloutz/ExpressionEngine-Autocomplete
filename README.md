@@ -7,7 +7,7 @@ Usage
 -----
 In order for this to properly function you meed to meet two requirements
 + Place EE_Autocomplete.php anywhere in your project directory.
-+ In any file in which you are required to call `get_instance()` you will have to first instantiated and EE instance and type hint it with an `@var CI_Controller` declaration.
++ In any file in which you are required to obtain a `CI_Controller` instance via `get_instance()` you must first instantiate the instance variable and type hint it to allow the IDE's to know what type of object it represents.
 
     	class Module_mcp {
     		/**
