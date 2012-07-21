@@ -5,7 +5,9 @@ ExpressionEngine Autocomplete provides code hinting for ExpressionEngine and Cod
 
 Usage
 -----
-In any file in which you are required to call `get_instance()` you will have to first instantiated and EE instance and type hint it with an `@var CI_Controller` declaration.
+In order for this to properly function you meed to meet two requirements
++ Place EE_Autocomplete.php anywhere in your project directory.
++ In any file in which you are required to call `get_instance()` you will have to first instantiated and EE instance and type hint it with an `@var CI_Controller` declaration.
 
 	class Module_mcp {
 		/**
