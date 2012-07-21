@@ -29,8 +29,9 @@ class EE_Autocomplete_user {
      * ================================================
      * User Objects for Aptana Studio 3+
      * ================================================
+     * Place your own objects and libraries below
+     * $this->object_name = new Object_name();
      */
-    // $this->object_name = new Object_name();
 
   }
 }
