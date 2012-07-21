@@ -9,17 +9,18 @@ In order for this to properly function you meed to meet two requirements
 + Place EE_Autocomplete.php anywhere in your project directory.
 + In any file in which you are required to call `get_instance()` you will have to first instantiated and EE instance and type hint it with an `@var CI_Controller` declaration.
 
-	class Module_mcp {
-		/**
-		 * @var CI_Controller
-		 */
-		 protected $EE;
-
-		 public function __construct()
-		 {
-		 	$this->EE =& get_instance();
-		 }
-	}
+    	class Module_mcp {
+    		/**
+    		 * @var CI_Controller
+    		 */
+    		 protected $EE;
+    
+    		 public function __construct()
+    		 {
+    		 	$this->EE =& get_instance();
+    		 }
+    	}
+    
 All subsequent calls to `$this->EE->...` will provide proper code hinting for ExpressionEngine and CodeIgniter components.
 
 If you are working from within a model the implementation will be automatic as it already extends CI_Model.
